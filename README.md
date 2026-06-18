@@ -1,0 +1,35 @@
+# FightFit AI
+
+FightFit AI is a production-ready MVP concept for beginners who want to get fit and learn how to fight safely. It combines a style assessment, martial arts matching, a beginner roadmap, gamified progress, skill trees, weekly training plans, and monetization-ready premium surfaces.
+
+## Stack
+
+- Next.js 15
+- TypeScript
+- Tailwind CSS
+- Shadcn-inspired local UI primitives
+- Framer Motion-ready dependency
+- LocalStorage assessment persistence
+- Mock seed data in `lib/data.ts`
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open http://localhost:3000.
+
+## Pages
+
+- `/` Home
+- `/assessment` Assessment quiz
+- `/results` Style matching results and roadmap
+- `/dashboard` XP, streaks, achievements, goals
+- `/skill-trees` Visual skill trees
+- `/training-plans` Weekly plan and workout blocks
+- `/gym-finder` Affiliate-ready gym finder placeholder with realistic mock listings
+- `/gear-store` Affiliate-ready starter gear recommendations
+- `/premium` AI Coach Premium and upgrade surface
+- `/profile` User profile and progress
