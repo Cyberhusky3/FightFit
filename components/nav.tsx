@@ -1,0 +1,3 @@
+import Link from 'next/link';import { Dumbbell } from 'lucide-react';
+const links=['Dashboard','Skill Trees','Training Plans','Gym Finder','Gear Store','Premium','Profile'];
+export function Nav(){return <nav className="sticky top-0 z-50 border-b border-white/10 bg-background/85 backdrop-blur"><div className="mx-auto flex max-w-6xl items-center gap-4 px-4 py-3"><Link href="/" className="flex items-center gap-2 font-black"><Dumbbell className="text-primary"/>FightFit AI</Link><div className="ml-auto hidden gap-3 text-sm text-zinc-300 md:flex">{links.map(l=><Link key={l} href={'/'+l.toLowerCase().replaceAll(' ','-')} className="hover:text-primary">{l}</Link>)}</div></div></nav>}

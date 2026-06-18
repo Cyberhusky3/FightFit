@@ -1,0 +1,2 @@
+import { Card, Progress, Pill } from '@/components/ui';
+export default function Profile(){return <main className="mx-auto max-w-4xl px-4 py-10"><h1 className="text-4xl font-black">Profile</h1><Card className="mt-6"><Pill>Beta user</Pill><h2 className="mt-3 text-2xl font-black">Beginner Boxer</h2><p className="text-zinc-400">Goal: lose weight, gain confidence, train 4 days/week.</p><div className="mt-5"><p className="font-bold">Roadmap progress</p><Progress value={34}/></div></Card></main>}
