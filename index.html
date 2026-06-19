@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07080c" />
+  <title>FightFit AI — Find Your Fighting Style</title>
+  <meta name="description" content="A standalone HTML MVP for discovering your best martial art, roadmap, dashboard, skill trees, training plans, gyms, gear, and premium coaching." />
+  <link rel="stylesheet" href="assets/app.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="FightFit AI home"><span class="brand-mark">🥊</span> FightFit AI</a>
+    <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    <nav id="navLinks" class="nav-links" aria-label="Primary navigation">
+      <a href="#assessment">Assessment</a><a href="#results">Results</a><a href="#dashboard">Dashboard</a><a href="#skills">Skill Trees</a><a href="#plans">Training Plans</a><a href="#gyms">Gym Finder</a><a href="#gear">Gear</a><a href="#premium">Premium</a><a href="#profile">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section grid-bg">
+      <div class="hero-copy">
+        <p class="eyebrow">Beginner-safe • Gamified • Personalized</p>
+        <h1>Find Your Fighting Style.</h1>
+        <p class="subhead">Take a 2-minute assessment and get a personalized martial arts and fitness roadmap.</p>
+        <div class="actions"><a class="button primary" href="#assessment">Start Assessment</a><a class="button ghost" href="#dashboard">View Demo</a></div>
+      </div>
+      <aside class="hero-card card">
+        <p class="mini-label">Today’s beta roadmap</p>
+        <h2>Boxing Fundamentals</h2>
+        <div class="meter"><span style="width:68%"></span></div>
+        <ul><li>✓ Stance and guard unlocked</li><li>✓ 100 jabs practiced</li><li>→ Footwork ladder next</li></ul>
+      </aside>
+    </section>
+
+    <section class="section"><h2>Why beginners choose FightFit AI</h2><div class="cards three"><article class="card"><span class="icon">🔥</span><h3>XP streaks</h3><p>Build consistency with streaks, weekly goals, and level progression.</p></article><article class="card"><span class="icon">🏆</span><h3>Skill unlocks</h3><p>Progress from stance to combinations with clear, safe milestones.</p></article><article class="card"><span class="icon">🎥</span><h3>AI coach ready</h3><p>Premium video analysis surfaces are structured for future coaching.</p></article></div></section>
+
+    <section id="assessment" class="section split"><div><p class="eyebrow">Step 1</p><h2>2-minute assessment</h2><p>Answer beginner-friendly questions about goals, equipment, gym access, confidence, style preference, and injury limitations.</p><div id="quiz" class="card quiz"></div></div><div class="card"><h3>Your answers save locally</h3><p>This HTML MVP uses <code>localStorage</code>, so it works without a server or build step.</p><pre id="answerPreview">No answers yet.</pre></div></section>
+
+    <section id="results" class="section"><p class="eyebrow">Step 2</p><h2>Your style matches</h2><div id="matches" class="cards three"></div><div class="roadmap card"><h3>Beginner Roadmap</h3><div class="timeline"><div><strong>Month 1</strong><span>Basic stance, footwork, conditioning</span></div><div><strong>Month 2</strong><span>Fundamental techniques and defensive habits</span></div><div><strong>Month 3</strong><span>Beginner combinations and confidence rounds</span></div></div></div></section>
+
+    <section id="dashboard" class="section"><p class="eyebrow">Step 3</p><h2>Gamified Dashboard</h2><div class="cards three"><article class="card stat"><span>🔥</span><strong>5</strong><small>Daily streak</small></article><article class="card stat"><span>⭐</span><strong>1,240 XP</strong><small>Level 4 • 760 XP to Level 5</small><div class="meter"><span style="width:62%"></span></div></article><article class="card stat"><span>🏆</span><strong>6/18</strong><small>Skills unlocked</small></article></div><h3>Achievement badges</h3><div id="badges" class="badge-grid"></div></section>
+
+    <section id="skills" class="section"><p class="eyebrow">Step 4</p><h2>Skill Trees</h2><div id="skillTrees" class="cards two"></div></section>
+
+    <section id="plans" class="section"><p class="eyebrow">Step 5</p><h2>Personalized Weekly Training Plans</h2><div id="plansGrid" class="cards two"></div></section>
+
+    <section id="premium" class="section split"><div class="card premium-card"><span class="premium-badge">Premium</span><h2>AI Coach Premium</h2><p>Upload video in a future release to analyze punch form, squat form, posture issues, and suggested corrections.</p><button class="button primary" id="upgradeButton">Open upgrade modal</button></div><div class="card"><h3>Premium unlocks</h3><ul><li>Advanced plans</li><li>AI coaching</li><li>Unlimited progress tracking</li><li>Custom roadmaps</li><li>Advanced analytics</li></ul></div></section>
+
+    <section id="gyms" class="section"><p class="eyebrow">Affiliate-ready</p><h2>Local Gym Finder</h2><p>Future location search will compare prices, reviews, trial classes, and beginner programs.</p><div id="gymsGrid" class="cards three"></div></section>
+
+    <section id="gear" class="section"><p class="eyebrow">Affiliate-ready</p><h2>Starter Gear Store</h2><div id="gearGrid" class="cards three"></div></section>
+
+    <section id="profile" class="section"><h2>Profile</h2><div class="card profile"><span class="avatar">FF</span><div><p class="eyebrow">Beta user</p><h3>Beginner Boxer</h3><p>Goal: lose weight, gain confidence, train 4 days/week.</p><div class="meter"><span style="width:34%"></span></div></div></div></section>
+  </main>
+
+  <dialog id="upgradeModal" class="modal"><form method="dialog"><button class="close" aria-label="Close">×</button><p class="eyebrow">FightFit Premium</p><h2>Upgrade your fighter journey</h2><p>Premium will unlock AI coaching, custom roadmaps, deeper analytics, and unlimited progress tracking.</p><button class="button primary">Sounds good</button></form></dialog>
+  <div id="actionStatus" class="action-status" role="status" aria-live="polite">Ready to train.</div>
+  <footer class="footer">FightFit AI MVP • Standalone HTML, CSS, and JavaScript compatible.</footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
