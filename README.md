@@ -15,6 +15,11 @@ FightFit AI is a production-ready MVP concept for beginners who want to get fit 
 
 ## Run locally
 
+### Standalone browser version
+
+For the easiest no-build demo, double-click `run-in-browser.html` or drag it into any modern browser. It is a single self-contained file with inline CSS and JavaScript.
+
+You can also open `index.html` directly in a browser, or serve the folder with a static server:
 ### Standalone HTML version
 
 Open `index.html` directly in any modern browser, or serve the folder with a static server:
@@ -36,6 +41,7 @@ Then open http://localhost:3000.
 
 ## HTML-compatible MVP
 
+The standalone browser version includes the full journey in one responsive document: discovery, assessment, personalized scoring, results, roadmap, dashboard, skill unlocks, workout completion, XP/level progress, saved gyms, saved gear, premium interest, and profile state. Demo state is persisted with `localStorage`, and can be reset from the Profile section.
 The standalone version includes the full journey in one responsive document: discovery, assessment, personalized scoring, results, roadmap, dashboard, skill unlocks, workout completion, XP/level progress, saved gyms, saved gear, premium interest, and profile state. Demo state is persisted with `localStorage`, and can be reset from the Profile section.
 The standalone version includes the full journey in one responsive document: discovery, assessment, results, roadmap, dashboard, skill trees, training plans, gym finder, gear store, premium, and profile. Assessment state is persisted with `localStorage`.
 
