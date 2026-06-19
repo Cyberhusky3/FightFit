@@ -36,6 +36,7 @@ Then open http://localhost:3000.
 
 ## HTML-compatible MVP
 
+The standalone version includes the full journey in one responsive document: discovery, assessment, personalized scoring, results, roadmap, dashboard, skill unlocks, workout completion, XP/level progress, saved gyms, saved gear, premium interest, and profile state. Demo state is persisted with `localStorage`, and can be reset from the Profile section.
 The standalone version includes the full journey in one responsive document: discovery, assessment, results, roadmap, dashboard, skill trees, training plans, gym finder, gear store, premium, and profile. Assessment state is persisted with `localStorage`.
 
 ## Pages
