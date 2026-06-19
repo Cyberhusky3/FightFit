@@ -1,0 +1,5 @@
+import Link from 'next/link';import { ReactNode } from 'react';import { cn } from '@/lib/utils';
+export function Card({children,className}:{children:ReactNode;className?:string}){return <div className={cn('rounded-2xl border border-white/10 bg-card/90 p-5 shadow-glow',className)}>{children}</div>}
+export function Button({children,href,className,onClick}:{children:ReactNode;href?:string;className?:string;onClick?:()=>void}){const c=cn('inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 font-black text-black transition hover:scale-105',className);return href?<Link className={c} href={href}>{children}</Link>:<button onClick={onClick} className={c}>{children}</button>}
+export function Pill({children}:{children:ReactNode}){return <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-bold text-zinc-200">{children}</span>}
+export function Progress({value}:{value:number}){return <div className="h-3 overflow-hidden rounded-full bg-white/10"><div className="h-full rounded-full bg-primary" style={{width:`${value}%`}}/></div>}
